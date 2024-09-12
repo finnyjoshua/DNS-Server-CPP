@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build DNS Server",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+          "-o", "dns_server.exe",
+          "dns_server.cpp",
+          "-lws2_32"  // Link against Ws2_32.lib
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"]
+      },
+      {
+        "label": "Build DNS Client",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+          "-o", "dns_client.exe",
+          "dns_client.cpp",
+          "-lws2_32"  // Link against Ws2_32.lib
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"]
+      }
+    ]
+  }
+  

@@ -1,0 +1,48 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "C/C++: Debug Server",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "C:/Users/finny/OneDrive/Desktop/DNS Sever cpp project/dns_server.exe",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "C:/Users/finny/OneDrive/Desktop/DNS Sever cpp project",
+        "environment": [],
+        "externalConsole": true,
+        "MIMode": "gdb",
+        "miDebuggerPath": "gdb",
+        "preLaunchTask": "Build DNS Server",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      },
+      {
+        "name": "C/C++: Debug Client",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "C:/Users/finny/OneDrive/Desktop/DNS Sever cpp project/dns_client.exe",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "C:/Users/finny/OneDrive/Desktop/DNS Sever cpp project",
+        "environment": [],
+        "externalConsole": true,
+        "MIMode": "gdb",
+        "miDebuggerPath": "gdb",
+        "preLaunchTask": "Build DNS Client",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      }
+    ]
+  }
+  

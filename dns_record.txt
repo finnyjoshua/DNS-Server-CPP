@@ -1,0 +1,3 @@
+google.com 142.250.190.78
+example.com 93.184.216.34
+localhost 127.0.0.1
